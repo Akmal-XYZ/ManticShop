@@ -1,0 +1,230 @@
+
+<center>
+				<br>
+				
+				<br>
+				<h2>Mystery Shop Mantic Roleplay</h2>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+</style>
+</head>
+<body>
+		
+<div>
+		
+		
+	
+											<h1 id="angka"></h1>
+<button id="spin" onclick="spinAnimal()">COBA KEBERUNTUNGANMU</button>
+<button id="enter" style="display: none;" onclick="stopAnimal()">BERHENTI</button>
+<button id="shop" style="display: none;" onclick="goToShop()">ENTER</button>
+</div>
+<script>
+let interval;
+let animals = ['-90%', '-85%', '-79%'];
+let currentIndex = 0;
+
+function spinAnimal() {
+  document.getElementById("audioSpin").play();
+  
+  interval = setInterval(function() {
+    document.getElementById("angka").innerText = animals[currentIndex];
+    currentIndex = (currentIndex + 1) % animals.length; 
+  }, 20);
+  
+  document.getElementById("spin").style.display = "none"; 
+  document.getElementById("enter").style.display = "inline";
+}
+
+function stopAnimal() {
+  document.getElementById("audioSpin").pause();
+  document.getElementById("audioStop").play();
+  
+ clearInterval(interval);
+  var animalName = animals[Math.floor(Math.random() * animals.length)]; // Random animal name
+  document.getElementById("angka").innerText = animalName;
+
+  document.getElementById("spin").style.display = "none";
+  document.getElementById("enter").style.display = "none";
+  document.getElementById("shop").style.display = "inline";
+
+
+
+
+
+// Check which animal was displayed and set link accordingly
+
+switch (animalName) {
+
+case '-85%':
+
+document.getElementById("shop").setAttribute("data-link", "../diskon85ggbromantap1.html");
+
+break;
+
+case '-90%':
+
+document.getElementById("shop").setAttribute("data-link", "../diskon90xyzpcsi1945.html");
+
+break;
+
+case '-79%':
+
+document.getElementById("shop").setAttribute("data-link", "../diskon79wkwkjirlah998.html");
+
+break;
+
+default:
+
+break;
+
+}
+
+document.getElementById("shop").style.display = "inline";
+
+}
+
+function goToShop() {
+
+const link = document.getElementById("shop").getAttribute("data-link");
+
+window.location.href = link;
+
+}
+
+
+</script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-image: url('../punk.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  </style>
+  
+  
+  <style>
+  				body
+  				button {
+       
+            background-color: #fccf06;
+            color: black;
+            padding: 8px 10px;
+           
+            border: none;
+            
+            cursor: pointer;
+            width: 66%;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #fbff03;
+                       
+        }
+        
+        </style>
+        
+        <style>
+    @keyframes colorBlink {
+      0%, 100% { color: #ff0000; text-shadow: 0 0 20px #ff0000; }
+      33% { color: #00ffee; text-shadow: 0 0 20px #00ffee; }
+      66% { color: #00ff00; text-shadow: 0 0 20px #00ff00; }
+    }
+
+    h1 {
+      animation: colorBlink 3s infinite;
+    }
+  </style>
+  
+  <style>
+				body
+				h1 {
+			                     
+    
+        
+        
+				}
+				</style>
+				
+				
+				
+				<audio id="audioSpin" src="../spin.mp3"></audio>
+<audio id="audioStop" src="../stop.mp3"></audio>
+
+<style>
+				h1{
+				font-size: 150px;
+				}
+				</style>
+				
+				</center>
+				
+				
+				  <style>
+    @keyframes colorBlink {
+      0%, 100% { color: #ff0000; text-shadow: 0 0 20px #ff0000; }
+      33% { color: #00ffee; text-shadow: 0 0 20px #00ffee; }
+      66% { color: #00ff00; text-shadow: 0 0 20px #00ff00; }
+    }
+
+    h2 {
+      animation: colorBlink 3s infinite;
+    }
+  </style>
+  <br>
+  <p>note : web ini tidak dapat di buka lagi setelah anda membukanya</p>
+  
+  <style>
+  				p{
+  				color: white;
+  				}
+  				</style>
+  				
+  				
+  				
+  				
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystery Shop Mantic</title>
+</head>
+<body>
+
+   
+
+    <script>
+        // Gunakan local storage untuk menyimpan informasi bahwa halaman telah diakses
+        if (localStorage.getItem('pageAccessed')) {
+            alert('ANDA TELAH DI TENDANG OLEH AKMAL TZY');
+            window.location.href = 'about:blank';  // Redirect ke halaman kosong atau halaman lain yang sesuai
+        } else {
+            // Simpan informasi akses ke local storage
+            localStorage.setItem('pageAccessed', 'true');
+        }
+    </script>
+
+</body>
+</html>
+
+
